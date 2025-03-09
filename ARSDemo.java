@@ -82,6 +82,9 @@ public class ARSDemo extends Application
 						for (int i=0;i<numTravel;i++)
 						{
 							mtt[i]=new MultiThreadedTraveller(t,"Traveller"+(i+1),args);
+						}
+						for (int i=0;i<numTravel;i++)
+						{
 							mtt[i].thrd.join();
 						}
 						break;
